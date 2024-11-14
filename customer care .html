@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>customer care</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .customer-care{
+        margin-left: 100px;
+    }
+   
+    .container{
+        width: 400px;
+        height: 500px;  
+        background-color: rgb(18, 52, 207);
+        border-radius: 50px;
+        display: flex;
+         justify-content:center;
+         align-items:center;
+        flex-direction: column;
+     
+        
+    }
+ .heading{
+    font-size: 30px;
+    color: white;
+    padding: 20px 0px;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+    justify-content: center;
+
+ }
+.container-element{
+            width: 300px;
+            margin: 30px 0;
+            position: relative;
+            border-bottom: 3px solid white ;
+}
+.container-element input{
+            width: 100%;
+            height: 50px;
+            font-size: 1.2em;
+            color: white;
+            padding: 0 30px 0 10px;
+            background: transparent;
+            border: none;
+            outline: none;
+}
+.container-element label{
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            font-size: 1.2em;
+            color: yellow;
+            transition: 0.5s;
+}
+input:focus~label,
+        input:valid~label {
+            top: -5px;
+        }
+
+        .btn{
+            width: 300px;
+            height: 50px;
+            color: black;
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover{
+          background-color: black;
+          color: white;
+        }
+        img{
+            width: 500px;
+            height: auto;
+            margin-left: 100px;
+        }
+
+        @media (max-width: 768px) {
+        .container {
+            width: 90%;
+            max-width: 400px;
+            padding: 20px;
+        }
+
+        .heading {
+            font-size: 24px;
+        }
+
+        .container-element input {
+            font-size: 1.1em;
+            height: 45px;
+        }
+
+        .container-element label {
+            font-size: 1em;
+        }
+
+        .btn {
+            font-size: 16px;
+            height: 45px;
+        }
+
+        img {
+            width: 80%;
+            margin: 10px 0;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .container {
+            width: 100%;
+            max-width: 350px;
+            padding: 15px;
+        }
+
+        .heading {
+            font-size: 20px;
+        }
+
+        .container-element input {
+            font-size: 1em;
+            height: 40px;
+        }
+
+        .container-element label {
+            font-size: 0.9em;
+        }
+
+        .btn {
+            font-size: 14px;
+            height: 40px;
+        }
+
+        img {
+            width: 100%;
+            margin: 10px 0;
+        }
+    }
+   
+    
+</style>
+
+<body>
+    <img src="customer care img  e.jpg" alt="">
+    <section class="customer-care">
+    
+        <div class="container">
+       
+            <form action="">
+                <div class="heading">
+                <h2>hello user</h2>
+                </div>
+                <div class="container-element">
+                    <input type="text" placeholder="" required>
+                    <label for="">FullName</label>
+                </div>
+                <div class="container-element">
+                    <input type="email" placeholder="" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="container-element">
+                    <input type="text" placeholder="" required>
+                    <label for="">your problem</label>
+                </div>
+                <button class="btn">submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
