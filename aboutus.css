@@ -1,0 +1,136 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo h1 {
+    font-size: 1.8rem;
+}
+
+nav ul.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav ul.nav-links li {
+    margin-left: 20px;
+}
+
+nav ul.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul.nav-links li a:hover {
+    color: #f4a261;
+}
+
+/* Main Content Styling */
+main {
+    padding: 40px 20px;
+}
+
+.about-us {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.history, .mission {
+    margin-bottom: 30px;
+}
+
+.history h3, .mission h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Team Section */
+.team {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.team-member {
+    text-align: center;
+    width: 30%;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1rem;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
